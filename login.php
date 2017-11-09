@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   session_start();
    
   // Obtengo los datos cargados en el formulario de login.
@@ -10,7 +10,7 @@
   $nombreServidor = "localhost";
   $nombreUsuario = "root";
   $passwordBaseDeDatos = "";
-  $nombreBaseDeDatos = "incidentes";
+  $nombreBaseDeDatos = "devimed_twitter";
   
   // Crear conexión con la base de datos.
   $conn = new mysqli($nombreServidor, $nombreUsuario, $passwordBaseDeDatos, $nombreBaseDeDatos);
