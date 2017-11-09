@@ -78,12 +78,12 @@ if($caracteres <= 123){
 //Se muestra un mensaje con la cantidad de caracteres
 // echo "Este mensaje contiene ".$caracteres." caracteres. El mensaje es ".$mensaje;
 
-//Se almacena un arreglo con las llaves de la cuenta @cafa1525 para pruebas
-$twitter_carlosflorez = array(
-	'consumer_key' => 'INUntQQpkJfhxb23S8CBEYyyN',
-	'consumer_secret' => 's7X2a0klsZPaRaHaYav0FB2YRFnTBp6haiVzfKGbb1MWm5wqtd',
-	'token' => '2709539160-ICz0aXAbTfH23Tu9X0Yp9P7XHrPAQ8GmKbpPSa7',
-	'secret' => 'TdclxKuzRchXoLPmNTWQynYZMZRMKOOdtxS0GmaUDsxlE'
+//Se almacena un arreglo con las llaves de la cuenta @johnarleycano para pruebas
+$twitter_johnarleycano = array(
+	'consumer_key' => 'Jxyg7ccE6J2LQIE3LHRcg',
+	'consumer_secret' => 'v08GUFGQlbYXY5fHWOx9V2rFceFx4tGm38G7P4eG4',
+	'token' => '126341387-A7tP6DPna0rjmv5KJqvluyZm57vTGHpGl6pjBryA',
+	'secret' => 'lzAm164eIf43W1dUWILPnZxM3zLrZJHkUm181H4w'
 );
 
 //Se almacena un arreglo con las llaves de la cuenta @devimed
@@ -95,7 +95,8 @@ $twitter_devimed = array(
 );
 
 //Se inicializa para pruebas de comenta
-$tmhOAuth = new tmhOAuth($twitter_devimed);
+$tmhOAuth = new tmhOAuth($twitter_johnarleycano);
+// $tmhOAuth = new tmhOAuth($twitter_devimed);
 
 
 // Se envia el mensaje

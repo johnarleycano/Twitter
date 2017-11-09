@@ -29,7 +29,7 @@
                   <form action="login.php" method="post" class="form col-md-12 center-block">
                     <div class="form-group">
                       <!-- <input type="text" class="form-control input-lg" placeholder="Email"> -->
-                      <input type="mail" class="form-control input-lg" name="login" id="login" placeholder="Usuario" required>
+                      <input type="mail" class="form-control input-lg" name="login" id="login" placeholder="Usuario" required autofocus>
                     </div>
                     <div class="form-group">
                       <!-- <input type="password" class="form-control input-lg" placeholder="Password"> -->

@@ -19,9 +19,9 @@
   if ($conn ->connect_error) {
     die("Connection failed: " . $conn ->connect_error);
   }
-   
+
   // Consulta segura para evitar inyecciones SQL.
-  $sql = sprintf("SELECT * FROM dvm_usuarios WHERE login='%s' AND clave = '%s'", mysql_real_escape_string($user), mysql_real_escape_string($password)); 
+  $sql = sprintf("SELECT * FROM dvm_usuarios WHERE login='$user' AND clave = '{$pass}'", mysql_real_escape_string($user), mysql_real_escape_string($password)); 
  $result = mysqli_query($conn,$sql);
   // $resultado = $conn->query($sql);
  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
